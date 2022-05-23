@@ -13,6 +13,7 @@
             -webkit-font-smoothing: antialiased;
             font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
             background-image: url('bg.jpg');
+            background-repeat:repeat;
             font-size: 85%;
             margin: 0;
         }
@@ -28,12 +29,14 @@
             top: 40%;
             transform: translate(0, -50%);
             text-align: center;
+            color: rgb(253, 99, 125);
         }
         
         .timer {
             font-size: 180%;
             line-height: 1.5;
             margin: 1em 0;
+            color: rgb(253, 99, 125);
         }
         
         .timer b {
@@ -52,7 +55,7 @@
 
     <script>
         function timer() {
-            var start = new Date(2022, 5, 21); 
+            var start = new Date('2022/05/21 00:00:00'); 
             var t = new Date() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
